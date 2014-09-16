@@ -7,6 +7,7 @@ var prettybytes = function (an_integer) {
                 if (length < 22) {
                     return Math.floor((length - 1) / 3);
                 }
+                //it seems the maximum supported length of integer is 22
                 return 8;
             }()),
             //each triplet is worth an exponent of 1024 (2 ^ 10)
